@@ -1,0 +1,11 @@
+log_entry,log_level
+"17/06/08 13:33:58 INFO python.PythonRunner: Times: total = 40, boot = 10, init = 30, finish = 0",INFO
+"17/06/08 13:33:59 INFO python.PythonRunner: Times: total = 47, boot = -7, init = 51, finish = 3",INFO
+"17/06/08 13:33:59 INFO python.PythonRunner: Times: total = 39, boot = -84, init = 123, finish = 0",INFO
+17/06/08 13:34:00 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 108,INFO
+"17/06/08 13:34:01 INFO python.PythonRunner: Times: total = 39, boot = 15, init = 24, finish = 0",INFO
+"17/06/08 13:34:01 INFO spark.CacheManager: Partition rdd_7_25 not found, computing it",INFO
+17/06/08 13:34:01 INFO storage.BlockManager: Found block rdd_2_28 locally,INFO
+17/06/08 13:34:02 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 208,INFO
+17/06/08 13:34:02 INFO executor.Executor: Finished task 16.0 in stage 5.0 (TID 216). 2076 bytes result sent to driver,INFO
+17/06/08 13:34:02 INFO executor.Executor: Running task 26.0 in stage 5.0 (TID 226),INFO

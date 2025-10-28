@@ -68,7 +68,7 @@ ls data/raw/application_* | head -10
 # Should see directories like: application_1485248649253_0052
 
 # 5. Create your personal S3 bucket (replace YOUR-NET-ID with your actual net ID)
-export YOUR_NET_ID="your-net-id"  # e.g., "abc123"
+export YOUR_NET_ID="aa2627"  # e.g., "abc123"
 aws s3 mb s3://${YOUR_NET_ID}-assignment-spark-cluster-logs
 
 # 6. Upload the data to S3
@@ -128,7 +128,7 @@ Follow [AUTOMATION_README.md](AUTOMATION_README.md) to create your cluster:
 
 ```bash
 # Run the automated setup script
-./setup-spark-cluster.sh <YOUR_LAPTOP_IP>
+./setup-spark-cluster.sh 69.136.235.207
 
 # This creates a 4-node cluster (1 master + 3 workers)
 # The script will auto-detect your IAM instance profile for S3 access
@@ -319,7 +319,7 @@ source cluster-ips.txt
 
 # Run your script on the cluster (IMPORTANT: Use your actual net ID!)
 # Replace YOUR-NET-ID with your actual net ID (e.g., abc123)
-uv run python ~/problem1.py spark://$MASTER_PRIVATE_IP:7077 --net-id YOUR-NET-ID
+uv run python ~/problem1.py spark://$MASTER_PRIVATE_IP:7077 --net-id aa2627
 
 # Example:
 # uv run python ~/problem1.py spark://$MASTER_PRIVATE_IP:7077 --net-id abc123
