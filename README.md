@@ -228,7 +228,7 @@ Analyze cluster usage patterns to understand which clusters are most heavily use
 **Usage:**
 ```bash
 # Full Spark processing (10-20 minutes)
-uv run python problem2.py spark://$MASTER_PRIVATE_IP:7077 --net-id YOUR-NET-ID
+uv run python problem2.py spark://$MASTER_PRIVATE_IP:7077 --net-id aa2627
 
 # Skip Spark and regenerate visualizations from existing CSVs (fast)
 uv run python problem2.py --skip-spark
@@ -334,11 +334,11 @@ scp -i $KEY_FILE ubuntu@$MASTER_PUBLIC_IP:~/spark-cluster/problem1_sample.csv da
 scp -i $KEY_FILE ubuntu@$MASTER_PUBLIC_IP:~/spark-cluster/problem1_summary.txt data/output/
 
 # For problem2, download all 5 output files:
-scp -i $KEY_FILE ubuntu@$MASTER_PUBLIC_IP:~/spark-cluster/problem2_timeline.csv data/output/
-scp -i $KEY_FILE ubuntu@$MASTER_PUBLIC_IP:~/spark-cluster/problem2_cluster_summary.csv data/output/
-scp -i $KEY_FILE ubuntu@$MASTER_PUBLIC_IP:~/spark-cluster/problem2_stats.txt data/output/
-scp -i $KEY_FILE ubuntu@$MASTER_PUBLIC_IP:~/spark-cluster/problem2_bar_chart.png data/output/
-scp -i $KEY_FILE ubuntu@$MASTER_PUBLIC_IP:~/spark-cluster/problem2_density_plot.png data/output/
+scp -i $KEY_FILE ubuntu@$MASTER_PUBLIC_IP:~/spark-cluster/data/output/problem2_timeline.csv data/output/
+scp -i $KEY_FILE ubuntu@$MASTER_PUBLIC_IP:~/spark-cluster/data/output/problem2_cluster_summary.csv data/output/
+scp -i $KEY_FILE ubuntu@$MASTER_PUBLIC_IP:~/spark-cluster/data/output/problem2_stats.txt data/output/
+scp -i $KEY_FILE ubuntu@$MASTER_PUBLIC_IP:~/spark-cluster/data/output/problem2_bar_chart.png data/output/
+scp -i $KEY_FILE ubuntu@$MASTER_PUBLIC_IP:~/spark-cluster/data/output/problem2_density_plot.png data/output/
 ```
 
 **Important Notes:**
